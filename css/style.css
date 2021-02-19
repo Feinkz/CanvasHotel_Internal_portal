@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+
+body{
+    font: 14px/1.3 Arial, sans-serif;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+#Head {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/header.jpg);
+    height: 150px;
+}
+header {
+   
+    color: #9b2fd4;
+    display: block;
+    height: 70px;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+header h2{
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: normal;
+    left: 50%;
+    margin-left: -400px;
+    padding: 22px 0;
+    position: absolute;
+    width: 540px;
+}
+
+.container {
+    height: 100px;
+    width: 20%;
+    float: left;
+}
+
+.content{
+    padding: 30px;
+    float: left;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.8);
+    
+}
+
+#nav, #nav ul {
+ margin: 0;
+padding: 0;
+    list-style: none;
+width: 100px;
+
+}
+
+#nav {
+   background: rgba(255, 255, 255, 0);
+  
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    height: 58px;
+    padding: 0 0 0 9px;
+    position: relative;
+    width: 100px;
+   
+    
+}
+#nav ul {
+     
+    border: 1px;
+    border-radius: 0 5px 5px 5px;
+    border-width: 0 1px 1px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0.5);
+    left: -9999px;
+    overflow: hidden;
+    position: absolute;
+    top: -9999px;
+
+    
+    -moz-transform: scaleY (0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY (0);
+    transform: scaleY(0);
+}
+
+#nav li {
+    float: left;
+     position: relative;
+}
+#nav li a {
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 122, 122, 0.7);
+    display: block;
+    float: left;
+    font-weight: normal;
+    height: 30px;
+    padding: 23px 20px 0;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000000;
+    width: 100px;
+    
+}
+
+#nav li:hover > a {
+    color: #00B4FF;
+    
+}
+#nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+   outline: 0 none;
+}
+#nav li:hover ul.subs {
+    left: 140px;
+    top: 0px;
+    width: 180px;
+    
+   -moz-transform:scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(1);
+}
+#nav ul li {
+    background: none;
+   
+}
+#nav ul li a {
+    float: none;
+}
+#nav ul li:hover>a {
+    background-color: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    color: #00B4FF;
+}
+
+.container {
+    width: 15%;
+    
+}
+
+#content{
+    background-color: aliceblue;
+    width: 957px;
+    clear: both;
+    
+}
+
+
+.Foot {
+    
+    background-color: blueviolet;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    height: 58px;
+    padding: 0 0 0 9px;
+    width: 100%;
+    float: left;
+}
+
+.table_blur {
+    background: #f5ffff;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table_blur th {
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+    background: linear-gradient(#9595b6, #5a567f);
+    color:white;
+    padding: 10px 15px;
+    position: relative;
+}
+.table_blur th:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 25%;
+    width: 100%;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+}
+
+.table_blur tr:nth-child(odd) {
+    background: #ebf3f9;
+}
+
+.table_blur th:first-child {
+    border-left: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+
+.table_blur th:last-child {
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+
+.table_blur td {
+    border: 1px solid #e3eef7;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+/*.table_blur tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #a09f9d;
+}*/
+
+.table_blur tbody: hover tr:hover td {
+    color: #444444;
+    text-shadow: none;
+}
